@@ -6,5 +6,12 @@
 	var_dump(pg_fetch_all($result2));
 	$result3 = pg_query($dbconn, "select * from newTable;");
 	var_dump(pg_fetch_all($result3));
+	foreach($result3 as $result) {
+		echo $result;
+	}
+	
+	foreach($result3 as $result) {
+		echo $result["name"];
+	}
 	
 ?>
