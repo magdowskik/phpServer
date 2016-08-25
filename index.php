@@ -11,7 +11,6 @@
 	// foreach(pg_fetch_all($result3) as $result) {
 	// 	echo $result["name"];
 	// }
-	<?php
 // multiple recipients
 $to  = 'krzysztmagda@gmail.com'; //. ', '; // note the comma
 // $to .= 'wez@example.com';
@@ -54,6 +53,5 @@ $headers .= 'Bcc: birthdaycheck@example.com' . "\r\n";
 
 // Mail it
 mail($to, $subject, $message, $headers);
-?>
 	
 ?>
