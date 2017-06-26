@@ -1,0 +1,1 @@
+wlaczyc rozszerzenie soap dla apacha (extension=php_soap.dll w php.ini)
