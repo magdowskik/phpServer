@@ -6,7 +6,7 @@
 	require_once("soapclient/SforceHeaderOptions.php"); 
 	
 	$mySforceConnection = new SforceEnterpriseClient(); 
-	$mySforceConnection->createConnection("wsdl.wsdl.xml"); 
+	$mySforceConnection->createConnection("soapclient/wsdl.wsdl.xml"); 
 	$mySforceConnection->login(USERNAME, PASSWORD.SECURITY_TOKEN);
 	
 	$query = "SELECT Id, FirstName, LastName from Contact"; 
