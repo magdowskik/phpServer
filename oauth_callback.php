@@ -10,6 +10,8 @@ $code = $_GET['code'];
 if (!isset($code) || $code == "") {
     die("Error - code parameter missing from request!");
 }
+echo $code;
+die;
 
 $params = "code=" . $code
     . "&grant_type=authorization_code"
